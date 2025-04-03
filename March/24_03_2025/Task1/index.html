@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bill Calculation</h2>
+        <label for="billType">Select Bill Type:</label>
+        <select id="billType">
+            <option value="electricity">Electricity Bill</option>
+            <option value="water">Water Bill</option>
+            <option value="internet">Internet Bill</option>
+        </select>
+
+        <label for="units">Enter Units:</label>
+        <input type="number" id="units" placeholder="Enter units" min="0">
+
+        <button onclick="calculateBill()">Calculate</button>
+
+        <h3 id="result">Total Bill: $0.00</h3>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="plan.js"></script>
+</body>
+</html>

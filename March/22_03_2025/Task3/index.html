@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor-Patient Master Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Doctor-Patient Master Details</h2>
+        <div class="row">
+            <!-- Doctor List -->
+            <div class="col-md-4">
+                <h4>Doctors</h4>
+                <ul id="doctorList" class="list-group"></ul>
+            </div>
+
+            <!-- Patient Details -->
+            <div class="col-md-8">
+                <h4>Patients of <span id="selectedDoctor">None</span></h4>
+                <ul id="patientList" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/app.js"></script>
+</body>
+</html>
